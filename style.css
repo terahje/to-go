@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Permanent+Marker&display=swap');
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+}
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  /* Colors */
+  --prim-t_c: #07ad91;
+  --sec-t_c: #fff;
+  --logo_c: var(--prim-t_c);
+  --title_c: var(--sec-t_c);
+
+  /* Background Colors */
+  --dark-bg_c: #111;
+  --prim-bg_c: #333;
+  --sec-bg_c: #808080;
+
+  --prim-icon_c: var(--prim-t_c);
+
+  /* Font Styles */
+  /* Font Size */
+  --font-size_title: 3.5rem;
+  --font-size_xl: 2.5rem;
+  --font-size_md: 1.3rem;
+  --font-size_sm: 0.8rem;
+
+  /* Font Family */
+  --font-family_title: 'Permanent Marker', cursive;
+  --font-family_sub-title: var(--font-family_title);
+  --font-family_regular: 'Oswald', sans serif;
+}
+
+body {
+  font-family: var(--font-family_regular);
+  letter-spacing: 1px;
+  background-color: var(--dark-bg_c);
+  color: var(--sec-t_c);
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: var(--prim-t_c);
+  color: var(--sec-t_c);
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.icon {
+  color: var(--prim-icon_c);
+}
+
+.text-title {
+  font-size: var(--font-size_title);
+  font-family: var(--font-family_title);
+  color: var(--title_c);
+  text-align: center;
+  text-shadow: 5px 5px 3px black;
+}
+
+.text_sub-title {
+  font-size: var(--font-size_xl);
+  font-family: var(--font-family__sub-title);
+  color: var(--prim-t_c);
+  text-align: center;
+  font-weight: 100;
+  margin: 3rem 0;
+  text-shadow: 3px 3px 3px black;
+}
