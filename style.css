@@ -49,6 +49,7 @@ body {
   color: var(--sec-t_c);
 }
 
+/* Utility Classes */
 .btn {
   border: none;
   outline: none;
@@ -84,3 +85,44 @@ body {
   margin: 3rem 0;
   text-shadow: 3px 3px 3px black;
 }
+
+/* Utility Classes end */
+
+/* Header */
+header {
+  position: relative;
+}
+
+.bg-img {
+  background: url(https://source.unsplash.com/URjZkhqsuBk) center/cover
+    no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h1 span {
+  color: var(--prim-t_c);
+}
+
+.overlay .btn {
+  margin-top: 3rem;
+  font-size: var(--font-size_md);
+}
+
+.overlay .btn a {
+  color: var(--sec-t_c);
+}
+/* Header end */
