@@ -14,9 +14,11 @@ li {
   text-decoration: none;
   list-style: none;
 }
+/* Variables */
 
 :root {
   /* Colors */
+
   --prim-t_c: #07ad91;
   --sec-t_c: #fff;
   --logo_c: var(--prim-t_c);
@@ -30,16 +32,18 @@ li {
   --prim-icon_c: var(--prim-t_c);
 
   /* Font Styles */
-  /* Font Size */
+  /* Fonts sizes */
+
   --font-size_title: 3.5rem;
   --font-size_xl: 2.5rem;
   --font-size_md: 1.3rem;
   --font-size_sm: 0.8rem;
 
   /* Font Family */
+
   --font-family_title: 'Permanent Marker', cursive;
   --font-family_sub-title: var(--font-family_title);
-  --font-family_regular: 'Oswald', sans serif;
+  --font-family_regular: 'Oswald', sans-serif;
 }
 
 body {
@@ -48,7 +52,6 @@ body {
   background-color: var(--dark-bg_c);
   color: var(--sec-t_c);
 }
-
 /* Utility Classes */
 .btn {
   border: none;
@@ -59,15 +62,15 @@ body {
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
-
 .btn:active {
   transform: scale(0.95);
 }
-
 .icon {
   color: var(--prim-icon_c);
 }
-
+.logo {
+  color: var(--logo_c);
+}
 .text-title {
   font-size: var(--font-size_title);
   font-family: var(--font-family_title);
@@ -78,7 +81,7 @@ body {
 
 .text_sub-title {
   font-size: var(--font-size_xl);
-  font-family: var(--font-family__sub-title);
+  font-family: var(--font-family_sub-title);
   color: var(--prim-t_c);
   text-align: center;
   font-weight: 100;
@@ -482,6 +485,71 @@ footer p a {
 
   .nav-link {
     font-size: calc(var(--font-size_xl) / 1.2);
+  }
+
+  /* Menu */
+  .menu-container {
+    max-width: 650px;
+  }
+
+  .Breakfast-container,
+  .Lunch-container,
+  .Diner-container {
+    grid-template-columns: 1fr 3fr;
+    font-size: var(--font-size_md);
+  }
+
+  .menu-container aside {
+    font-size: calc(var(--font-size_md) * 1.4);
+    letter-spacing: 2px;
+  }
+
+  .menu-container ul {
+    background-color: var(--prim-bg_c);
+    padding: 1rem;
+  }
+
+  /* Orders */
+
+  .card-body {
+    width: 600px;
+  }
+
+  .card-title,
+  .card-price {
+    font-size: var(--font-size_xl);
+  }
+
+  .card-description {
+    font-size: var(--font-size_md);
+  }
+
+  .input-container input[type='number'] {
+    width: 80px;
+    font-size: var(--font-size_md);
+  }
+
+  .input-container label,
+  .btn-order,
+  .prev,
+  .next {
+    font-size: var(--font-size_md);
+  }
+
+  .btn-order {
+    margin-bottom: 1.5rem;
+  }
+
+  .prev {
+    left: 20px;
+  }
+  .next {
+    right: 20px;
+  }
+
+  h2.text_sub-title {
+    font-size: calc(var(--font-size_xl) * 1.5);
+    margin-bottom: 6rem;
   }
 }
 /* Tablet End */
