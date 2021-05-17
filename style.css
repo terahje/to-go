@@ -455,3 +455,33 @@ footer p a {
 }
 
 /* Footer End*/
+
+/* RESPONSIVE */
+
+/* Tablet */
+@media screen and (min-width: 700px) {
+  /* Header */
+  .overlay h1 {
+    font-size: calc(var(--font-size_xl) * 2.8);
+  }
+
+  .overlay .btn {
+    margin-top: 10rem;
+    font-size: var(--font-size_md);
+    padding: 1rem 1.5rem;
+  }
+
+  /* Nav */
+  .navigation {
+    padding-top: 1rem;
+  }
+
+  .nav-social {
+    margin-top: 55vh;
+  }
+
+  .nav-link {
+    font-size: calc(var(--font-size_xl) / 1.2);
+  }
+}
+/* Tablet End */
