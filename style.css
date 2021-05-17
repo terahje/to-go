@@ -659,4 +659,46 @@ footer {
     transition: 0.3s ease;
   }
 }
+
+/* Menu */
+main {
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 0 30px 5px rgba(7, 171, 144, 0.7);
+  box-shadow: bottom none;
+}
+
+.menu-container {
+  max-width: 100%;
+}
+
+.Breakfast-container,
+.Lunch-container,
+.Diner-container {
+  font-size: calc(var(--font-size_md) * 1.2);
+}
+
+.menu-container aside {
+  font-size: calc(var(--font-size_md) * 2);
+  letter-spacing: 3px;
+}
+
+/* Orders */
+
+.card-body {
+  width: 600px;
+  box-shadow: 0 0 10px 1px black;
+}
+
+.card-title,
+.card-price {
+  font-size: var(--font-size_xl);
+}
+
+.prev {
+  left: 140px;
+}
+.next {
+  right: 140px;
+}
 /* Desktop End */
