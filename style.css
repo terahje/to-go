@@ -342,4 +342,31 @@ header {
   text-align: center;
   padding: 0.5rem;
 }
+
+.orders-section {
+  position: relative;
+}
+
+.prev,
+.next {
+  position: absolute;
+  cursor: pointer;
+  top: 60%;
+  transition: 0.6s ease;
+  opacity: 0.7;
+}
+
+.prev {
+  left: 3px;
+}
+.next {
+  right: 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: var(--prim-t_c);
+  color: black;
+}
+
 /* Orders Section End */
